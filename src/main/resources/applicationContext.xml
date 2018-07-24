@@ -43,13 +43,13 @@
        </bean>
        
        <!-- 配置事务 -->
-       <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+       <!-- <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="basicDataSource" />
-	   </bean>
+	   </bean> -->
 	   
 	   <!-- 配置事务注解驱动 -->
-	   <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
-       
+	  <!--  <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+        -->
        
        
 </beans>
